@@ -1,2 +1,9 @@
 this s atest modified by develop
-test24asdf
+test24asdfFor rollback escenario create a backup for master branch in case it not exists (masterRollback)
+Update masterRollback branch from master branch
+Update master branch from release branch (without pushing the changes yet, this will be done in step 5, for the release branch name check the CM Jira ticket or ask to QA team)
+Create or delete the tag on any remote before you push
+You can list the current tags
+    ick the repository in your GitHub account
+    Click "Settings" in the bottom right corner
+    Click "Delete the repository" at the bottom.
