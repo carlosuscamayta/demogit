@@ -22,3 +22,18 @@ git reset HEAD --hard;
 When you are done, don't forget to update your remote branch (use --force or -f flag in case you need to override history).
 
 git push origin A -f;
+
+
+
+3
+
+Here is a last resort idea (it's dirty and not a git way of doing things)...
+
+    Go to branch B (git checkout B).
+    Copy all the content of that branch(ctrl + c)
+    Go to branch A (git checkout A)
+    Delete everything from branch A (select all with mouse and delete)
+    Copy all the content from the branch B in the folder where all the branch A stuff was. (ctrl + v)
+    Stage all the new changes (git add .)
+    Commit the staged changes (git commit -m "Branch A is now the same as B")
+
