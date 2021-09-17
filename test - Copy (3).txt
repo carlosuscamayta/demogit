@@ -11,3 +11,17 @@ You can list the current tags
     ick the repository in your GitHub account
     Click "Settings" in the bottom right corner
     Click "Delete the repository" at the bottom.
+
+git checkout A;
+
+To remove everything in branch A and make it to be the same as B:
+
+git reset B --hard;
+
+If you need to discard all your local changes (kind of revert, but doesn't mess up git like git revert):
+
+git reset HEAD --hard;
+
+When you are done, don't forget to update your remote branch (use --force or -f flag in case you need to override history).
+
+git push origin A -f;
